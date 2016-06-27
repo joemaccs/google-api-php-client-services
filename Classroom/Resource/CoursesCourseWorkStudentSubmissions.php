@@ -202,11 +202,11 @@ class Google_Service_Classroom_Resource_CoursesCourseWorkStudentSubmissions exte
    * @param array $optParams Optional parameters.
    * @return Google_Service_Classroom_ClassroomEmpty
    */
-  public function return($courseId, $courseWorkId, $id, Google_Service_Classroom_ReturnStudentSubmissionRequest $postBody, $optParams = array())
+  public function returnSubmission($courseId, $courseWorkId, $id, Google_Service_Classroom_ReturnStudentSubmissionRequest $postBody, $optParams = array())
   {
     $params = array('courseId' => $courseId, 'courseWorkId' => $courseWorkId, 'id' => $id, 'postBody' => $postBody);
     $params = array_merge($params, $optParams);
-    return $this->call('return', array($params), "Google_Service_Classroom_ClassroomEmpty");
+    return $this->call('returnSubmission', array($params), "Google_Service_Classroom_ClassroomEmpty");
   }
   /**
    * Turns in a student submission. Turning in a student submission transfers
